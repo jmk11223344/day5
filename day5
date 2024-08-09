@@ -1,0 +1,93 @@
+day5
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+</head>
+<body>
+    <h1>5일차 수업 파일 입니다.</h1>
+    <hr>
+<div><strong>이것은 div 태그입니다.</strong>
+    <a href="https://naver.com" target="blank">이것은 a태그 입니다</a>
+</div>
+<tmp>이것은 tmp 태그입니다.<p>이것은 p태그 입니다</p></tmp>
+<iframe src="https://www.youtube.com/embed/KKcukQEE8WM?si=tV81D2jMLG3szpal"
+ width="100%" height="500" > 
+    <p>오류가 발생했을때 적히는 글끼</p>
+
+
+</iframe>
+
+<a href="./page1.html">page1</a>
+
+<div id ="foo">
+    콘텐츠 입니다.
+</div>
+
+<button onclick="onpush()">
+    <span id="b1">버튼이 눌리지 않음</span></button>
+
+<script>
+function onpush(){
+    window.open("./page1.html","_self");
+    return;
+    let b = document.getElementById("b1");
+    if(b.textContent =="버튼이 눌림"){
+        b.textContent="버튼 안눌림";
+    }else{
+        b.textContent = "버튼이 눌림";
+    }
+    return;
+}
+
+    let e1 = document.getElementById("foo");
+    e1.textContent = "멋진 사람"
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//page1.html
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+</head>
+<body>
+    <a href="./index.html">
+    <image src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2023%2F09%2F13%2FAKR20230913114200062_01_i_P4_20230913150524168.jpg&type=a340"></image>
+    </a>
+
+
+
+</body>
+</html>
