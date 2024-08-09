@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환율개산기</title>
+</head>
+<body>
+    <label>
+        입력
+    
+    <input type="number"  id="입력값" value="0.0">
+    <select name=" 입력단위" id="i">
+        <option value="원">원</option>
+        <option value="달러">달러</option>
+        <option value="엔">엔</option>
+    </select>
+ </label>
+
+ <label>
+    출력
+
+     <input type="number"  id="출력값" value="0.0" >
+     <select name=" 출력단위" id="o">
+     <option value="원">원</option>
+     <option value="달러" selected>달러</option>
+     <option value="엔">엔</option>
+     </select>
+ </label>
+
+
+ <button onclick="calc()">계산하기</button>
+ <script>
+    function calc(){
+        let inumb = document.getElementById("입력값").value;
+        let onumb = document.getElementById("출력값");
+        
+        let ii = document.getElementById("i");
+        let oo = document.getElementById("o");
+        switch(ii.value){
+            case "원":
+                if(oo.value == "달러"){
+                    onumb.value = inumb/(137.700000);                
+                }else if(oo.value == "엔"){
+                    onumb.value = inumb/(9.277963);
+                }else{
+                    onumb.value = inumb;
+                }
+                break;
+            case "달러": 
+                break;
+        }
+    }
+ </script>
+    </body>
+    
+</body>
+</html>
